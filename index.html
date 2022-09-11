@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="clock">
+      <div id="stopwatch">
+        <p id="pstop">STOP WATCH</p>
+        <h1 id="holder"><span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span>:<span id="mic">00</span></h1>
+        <div id="button">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+        </div>
+      </div>
+      <div id="curtime">
+        <h3>clock</h3>
+        <i class="fa fa-clock-o" ></i>
+          <h1 id="aholder"><span id="ahour">00</span>:<span id="amin">00</span>:<span id="asec">00</span></h1>
+      </div>
+      <div id="alarm">
+        <p id="palarm">ALARM</p>
+        <p id="alarmseted"></p>
+        <div id="input">
+          <input type="number"  id="inputhour" placeholder="Hour" required max="24" ><br>
+          <input type="number"  id="inputmin" placeholder="Minute" required max="60">
+          <input type="number"  id="inputsec" placeholder="Second" required max="60">
+        </div>
+        <br>
+        <button id="start">Set Alarm</button>
+      </div>
+    </div>
+    <audio id="audio" src="RingTone1.mp3"></audio>
+</body>
+<script src="index.js"></script>
+<script src="alarm.js"></script>
+</html>
